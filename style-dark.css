@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+body{
+  background-color: #121212;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #ffffff;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  min-height: 90vh;
+}
+a{
+  color: #ffffff;
+  text-decoration: none;
+}
+:focus {
+  outline: none;
+}
+.avatar{
+  border-radius: 100%;
+  transition: border-radius 1s linear;
+  transition-delay: 0s;
+  height: 200px;
+}
+.avatar:hover{
+  border-radius: 50px;
+}
+#content{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  top: 75px;
+  position: relative;
+  height: 100%;
+}
+#control-panel{
+  border: 2.5px #7d63ff solid;
+  border-radius: 10px;
+  right: 10px;
+  position: absolute;
+  padding: 5px;
+  background-color: #3225714a;
+  overflow: hidden;
+}
+#control-panel button{
+  border: none;
+  background: none;
+  border-radius: 10px;
+  padding: 0px 1.5px 0px 1.5px;
+  overflow: hidden;
+  cursor: pointer;
+}
+#control-panel button:hover{
+  border-radius: 10px;
+  background-color: #8377c16b;
+}
+#control-panel button img{
+  filter: invert(100%);
+}
+#light-btn img:hover{
+  animation: rotate 3s linear infinite;
+}
+#dark-btn img:hover{
+  animation: rotate 3s linear infinite;
+}
+@keyframes rotate{
+  0%{
+    transform: rotate(0deg);
+  }
+  100%{
+    transform: rotate(360deg);
+  }
+}
+#description{
+  background-color: #232323;
+  color: #ffffff;
+  padding: 10px;
+  border-radius: 10px;
+}
+#status{
+  font-size: clamp(16px, 4vw, 44px);
+  padding: 10px;
+  max-width: 955px;
+  margin: 20px;
+  border-radius: 10px;
+  background-color: #1e1e1e;
+  position: relative;
+  border-left: 10px #f95555 solid;
+}
+footer{
+  bottom: 40px;
+  position: absolute;
+}
